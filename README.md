@@ -1,2 +1,2 @@
-# SAP OCI 5
+# SAP Open Catalog Interface Release 5
 
