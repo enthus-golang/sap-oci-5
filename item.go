@@ -46,7 +46,7 @@ type NewItem struct {
 	AssortmentIndicator   string                 `json:"ASSORTMENT_IND,omitempty" validate:"max=2"`
 	SustainableCompliance SustainableCompliance  `json:"SUSTAINABLE_CMPL,omitempty" validate:"max=2"`
 	SustainableIndicators []SustainableIndicator `json:"SUSTAINABLE_IND,omitempty"`
-	ParentID              string                 `json:"PARENT_ID" validate:"max=255"`
+	ParentID              string                 `json:"PARENT_ID,omitempty" validate:"max=255"`
 	//Attachments            []Attachment  `json:"ATTACHMENTS"`
 	DeletionIndicator DeletionIndicator `json:"DELETION_IND,omitempty" validate:"max=1"`
 	CatalogManaged    string            `json:"CATALOG_MANAGED,omitempty" validate:"max=1"`
