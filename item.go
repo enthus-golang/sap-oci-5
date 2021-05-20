@@ -14,8 +14,8 @@ type NewItem struct {
 	Languages              []Language    `json:"LANGUAGES" validate:"max=required,min=1"`
 	Description            []Description `json:"DESCRIPTION,omitempty"`
 	Service                string        `json:"SERVICE,omitempty" validate:"max=1"`
-	PriceValidFrom         *Time         `json:"PRICE_VALID_FROM"`
-	PriceValidTo           *Time         `json:"PRICE_VALID_TO"`
+	PriceValidFrom         *Time         `json:"PRICE_VALID_FROM,omitempty"`
+	PriceValidTo           *Time         `json:"PRICE_VALID_TO,omitempty"`
 	Price                  float64       `json:"PRICE,omitempty"`
 	PriceQuantity          string        `json:"PRICE_QUANTITY,omitempty" validate:"max=15"`
 	Currency               string        `json:"CURRENCY,omitempty" validate:"max=5"`
