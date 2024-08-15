@@ -81,13 +81,9 @@ jobs:
         shell: bash
 
       - name: Check licenses
-        run: >
-          go-licenses check ./...
-          --ignore ${{ github.repository }}
+        run: go-licenses check ./...
         shell: bash
 
       - name: Get licenses list
-        run: >
-          go-licenses csv ./...
-          --ignore ${{ github.repository }}
+        run: go-licenses csv ./...
         shell: bash
